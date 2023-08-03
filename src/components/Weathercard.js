@@ -17,12 +17,16 @@ function Weathercard() {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     const data = await response.json();
     console.log('Data', data);
+    if(response.status!==404){
+      setCity(data.name);
+     setTemperature(Math.round(data.main.temp));
+     setHumidity(Math.round(data.main.humidity));
+      setWind(Math.round(data.wind.speed));
+    }else{
+      alert("Invalid City");
+    }
 
-
-    setCity(data.name);
-    setTemperature(Math.round(data.main.temp));
-    setHumidity(Math.round(data.main.humidity));
-    setWind(Math.round(data.wind.speed));
+    
   }
 
   const handleSearch = () => {
