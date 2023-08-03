@@ -17,6 +17,10 @@ function Weathercard() {
     const response =await fetch(apiUrl + `&appid=${apiKey}`);
     var data = await response.json()
     console.log('Data', data)
+
+    document.querySelector(".temperature h1").textContent = Math.round(data.main.temp) + " °C"
+    document.querySelector(".wind").textContent = Math.round(data.wind.speed) + " km/h"
+    document.querySelector(".humidity").textContent = Math.round(data.main.humidity) + " %"
   }
 checkWeather()
 
@@ -29,11 +33,11 @@ checkWeather()
       <div className='city'><p>Nairobi</p></div>
       <div className='temperature'>
         <p className='status-image'> <img src={Clear} alt="" /> </p>
-        <h1>20&nbsp;<sup>oC</sup></h1>
+        <h1>20&nbsp; </h1>
 
         <div className='humidity-wind'>
-          <p><img src={Humidity} alt="" />Humidity- 30%</p>
-          <p><img src={Wind} alt="" />Wind-5 km/h</p>
+          <img src={Humidity} alt="" /> <p className='humidity'>Humidity- 30%</p>
+          <img src={Wind} alt="" /><p className='wind'>Wind-5 km/h</p>
         </div>
         <p className='author'>Made on earth by humans</p>
       </div>

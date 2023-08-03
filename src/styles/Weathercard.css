@@ -30,17 +30,21 @@ button{
     outline: none;
 }
 .status-image{
-    transform: scale(0.7);
+    transform: scale(0.5);
     margin-top: -60px;
 }
 .temperature h1{
     display: flex;
     color: white;
     justify-content: center;
-    margin-top: -40px;
+    margin-top: -60px;
     font-size: 45px;
     margin-bottom: 100px;
 }
+.temperature h1 p{
+    color: white;
+}       
+
 .humidity-wind{
     display: flex;
     bottom: 1px;
@@ -66,4 +70,5 @@ button{
     opacity: 20%;
     color: white;
     font-weight: bold;
+    
 }
