@@ -2,7 +2,7 @@ import React from 'react'
 
 function Weathercard() {
   return (
-    <div>Weathercard</div>
+    <div>Hello</div>
   )
 }
 
