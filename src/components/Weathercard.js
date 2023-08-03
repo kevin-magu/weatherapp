@@ -11,8 +11,15 @@ import Snow from '../images/snow.png'
 
 function Weathercard() {
   const apiKey = '055b7d5f2715779c9dcb2b24327a0408';
-  const apiUrl = 'https://api.openweathermap.org';
-  
+  const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=nairobi';
+
+  async function checkWeather (){
+    const response =await fetch(apiUrl + `&appid=${apiKey}`);
+    var data = await response.json()
+    console.log('Data', data)
+  }
+checkWeather()
+
   return (
     <div className='weather-card'>
       <div className='search-div'>
