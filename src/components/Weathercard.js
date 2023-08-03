@@ -12,8 +12,8 @@ function Weathercard() {
       </div>
 
       <div className='temperature'>
-        <p> <img src={Clear} alt="" /> </p>
-        <p></p>
+        <p className='status-image'> <img src={Clear} alt="" /> </p>
+        <h1>20 <sup>oC</sup></h1>
       </div>
     </div>
   )

@@ -19,3 +19,13 @@
 .search-div input:focus{
     outline: none;
 }
+.status-image{
+    transform: scale(0.7);
+}
+.temperature h1{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: -40px;
+    font-size: 45px;
+}
