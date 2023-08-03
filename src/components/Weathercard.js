@@ -1,8 +1,15 @@
 import React from 'react'
+import  '../styles/Weathercard.css'
+
 
 function Weathercard() {
   return (
-    <div>Hello</div>
+    <div className='weather-card'>
+      <div className='search-div'>
+      <input type="text" placeholder='Search Weather by city' />
+      <button>Search</button>
+      </div>
+    </div>
   )
 }
 
