@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
+      <h2>Weather App - Search Weather by city</h2>
      <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
