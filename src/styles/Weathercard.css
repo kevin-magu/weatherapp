@@ -18,6 +18,8 @@ button{
     font-size: 40px;
     color: white;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 .weather-card .search-div{
     width: 100%;
@@ -78,4 +80,7 @@ button{
     flex-direction: column;
     align-items: center;
     display: none;
+}
+.loading{
+    color: white;
 }
