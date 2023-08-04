@@ -50,7 +50,7 @@ function Weathercard() {
 
       document.querySelector(".main-section").style = "display: block";
     } else {
-      alert("Invalid City");
+      alert("City not in database!");
     }
   }
 
